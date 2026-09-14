@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ICJ SME ADVISORS S.R.L.">
+<meta name="theme-color" content="#071d2b">
+<title>ICJ SME ADVISORS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top">
+  <header class="container">
+    <a class="brand" href="#home" aria-label="ICJ SME ADVISORS home"><img src="teal_owl.png" alt=""><span class="brand-name">ICJ SME ADVISORS</span></a>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Main navigation"><a href="#home" data-ro="Acasă">Home</a><a href="#services" data-ro="Servicii">Services</a><a href="#contact" data-ro="Contact">Contact</a></nav>
+      <div class="language-picker">
+        <button class="lang" id="language-toggle" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu" aria-label="Select language, currently English" title="English" data-aria-label-ro="Selectează limba, momentan română" data-title-ro="Română">
+          <span id="current-language-code">EN</span><span class="lang-caret" aria-hidden="true"></span>
+        </button>
+        <div class="language-menu" id="language-menu" role="menu" aria-labelledby="language-menu-title" hidden>
+          <p class="language-menu-title" id="language-menu-title" data-ro="Schimbă limba">Change language</p>
+          <button class="language-option" type="button" role="menuitemradio" aria-checked="true" data-lang="en"><span class="language-radio" aria-hidden="true"></span><span>English - EN</span></button>
+          <button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ro"><span class="language-radio" aria-hidden="true"></span><span>Română - RO</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<main>
+  <section class="page-section intro-section" id="home">
+    <div class="container">
+      <p class="tagline">
+        <span data-ro="ICJ SME ADVISORS S.R.L. este o firmă de consultanță fiscală care ajută companiile să gestioneze cerințele de reglementare, să își optimizeze operațiunile și să ia decizii cu încredere.">ICJ SME ADVISORS S.R.L. is a tax advisory firm helping companies navigate regulatory challenges, optimize their operations, and make decisions with confidence.</span>
+      </p>
+    </div>
+  </section>
+  <section class="page-section services-section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title" data-ro="Servicii">Services</h2>
+      <ul class="service-list">
+        <li data-ro="Fiscalitate și conformitate">Tax &amp; compliance</li>
+        <li data-ro="Raportare managerială">Management reporting</li>
+        <li data-ro="Consultanță de afaceri">Business advisory</li>
+      </ul>
+    </div>
+  </section>
+  <section class="page-section contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title" data-ro="Contact">Contact</h2>
+      <p class="contact-company">ICJ SME ADVISORS S.R.L.</p>
+      <dl class="contact-list">
+        <div><dt data-ro="Sediu:">Office:</dt><dd>Str. Nicolae Galea nr. 5, Sector 5, București 050215</dd></div>
+        <div><dt data-ro="CUI:">Tax ID:</dt><dd>RO42957390</dd></div>
+        <div><dt data-ro="Nr. Registrul Comerțului:">Commerce registry No:</dt><dd>J40/10412/2020</dd></div>
+        <div><dt data-ro="E-mail:">Email:</dt><dd></dd></div>
+        <div><dt data-ro="Telefon:">Phone:</dt><dd>+40744557804</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<footer class="foot"><div class="container"><strong>ICJ SME ADVISORS S.R.L.</strong><div class="meta"><span>© <span id="year"></span> <span data-ro="Toate drepturile rezervate.">All rights reserved.</span></span><span>CUI RO42957390</span><span>J40/10412/2020</span></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
