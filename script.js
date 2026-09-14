@@ -127,4 +127,29 @@ if(phoneViewport.addEventListener){
   phoneViewport.addListener(closePhoneMenuOnDesktop);
 }
 
+document.querySelectorAll('.email-copy-button').forEach(button=>{
+  button.addEventListener('click',async()=>{
+    const email=button.dataset.email;
+    let copied=false;
+    try{
+      await navigator.clipboard.writeText(email);
+      copied=true;
+    }catch{
+      const field=document.createElement('textarea');
+      field.value=email;
+      field.setAttribute('readonly','');
+      field.style.position='fixed';
+      field.style.opacity='0';
+      document.body.appendChild(field);
+      field.select();
+      copied=document.execCommand('copy');
+      field.remove();
+    }
+    if(copied){
+      const status=button.nextElementSibling;
+      status.textContent=button.dataset.copiedMessage;
+      window.setTimeout(()=>{status.textContent='';},2000);
+    }
+  });
+});
 document.getElementById('year').textContent=new Date().getFullYear();
