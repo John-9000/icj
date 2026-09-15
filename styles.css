@@ -42,7 +42,9 @@ h2{font-size:clamp(.98rem,1.96vw,1.666rem);line-height:1.05}
 .intro-section .tagline{margin-top:0}
 .tagline span{display:block}.tagline span+span{margin-top:.6em}
 .services-section{background:var(--white)}
-.service-list{margin:28px 0 0;padding-left:1.35em;display:grid;gap:6px;list-style:disc;font-size:18px}
+.service-groups{margin-top:28px;display:grid;gap:32px}
+.service-group h3{margin:0;color:var(--ink);font-size:18px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.service-list{margin:14px 0 0;padding-left:1.35em;display:grid;gap:8px;list-style:disc;font-size:18px;line-height:1.55}
 .service-list li{padding-left:6px}
 .service-list li::marker{color:var(--teal)}
 .contact-section{background:var(--teal-pale)}
