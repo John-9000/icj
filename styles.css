@@ -38,7 +38,7 @@ h1,h2{margin:0;color:var(--teal);font-family:"Manrope","Segoe UI",Arial,sans-ser
 h1{font-size:clamp(1.82rem,4.2vw,3.64rem);line-height:1}
 h2{font-size:clamp(.98rem,1.96vw,1.666rem);line-height:1.05}
 .page-section h2{text-decoration-line:underline;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:.22em}
-.tagline{max-width:70ch;margin:22px 0 0;color:var(--muted);font-size:18px;line-height:1.6}
+.tagline{max-width:70ch;margin:22px 0 0;color:var(--ink);font-size:18px;line-height:1.6}
 .intro-section .tagline{margin-top:0}
 .tagline span{display:block}.tagline span+span{margin-top:.6em}
 .services-section{background:var(--white)}
